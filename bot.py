@@ -32,7 +32,7 @@ async def BotzHub():
             print("[INFO] starting to check uptime..")
             await user_bot.edit_message(int(chnl_id), msg_id, "**@BotzHub Bots Stats.**\n\n`Performing a periodic check...`")
             c = 0
-            edit_text = "**@PredatorZNEX_Bots Stats.**\n(`auto-updated every 2 hours`)\n\n"
+            edit_text = "**@PredatorZNEX_Bots Stats.**\n╾──────────────────────╼ \n\n"
             for bot in bots:
                 print(f"[INFO] checking @{bot}")
                 snt = await user_bot.send_message(bot, "/start")
@@ -63,7 +63,7 @@ async def BotzHub():
             day = dt.now(k).strftime("%d")
             year =  dt.now(k).strftime("%Y")
             t = dt.now(k).strftime("%H:%M:%S")
-            edit_text +=f"\nNex(t) Bots after 1K😴,Rest in Peace \nLast Autodited: \n`{t} - {day} {month} {year} [IST]`"
+            edit_text +=f"Nex(t) Bots after 1K😴,Rest in Peace \n\n╾──────────────────────╼ \nLast Autodited: \n`{t} - {day} {month} {year} [IST]`"
             await user_bot.edit_message(int(chnl_id), int(msg_id), edit_text)
             print(f"Checks since last restart - {c}")
             print("Sleeping for 2 hours.")
