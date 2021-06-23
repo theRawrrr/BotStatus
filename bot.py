@@ -26,11 +26,11 @@ try:
 except Exception as e:
     print(f"ERROR\n{str(e)}")
 
-async def BotzHub():
+async def PredatorZNEX():
     async with user_bot:
         while True:
             print("[INFO] starting to check uptime..")
-            await user_bot.edit_message(int(chnl_id), msg_id, "**@BotzHub Bots Stats.**\n\n`Performing a periodic check...`")
+            await user_bot.edit_message(int(chnl_id), msg_id, "**@PredatorZNEX_Bots Status.**\n\n`Performing a periodic check...`")
             c = 0
             edit_text = "**@PredatorZNEX_Bots Stats.**\n╾──────────────────────╼ \n\n"
             for bot in bots:
@@ -70,4 +70,4 @@ async def BotzHub():
             if c != 0:
                 break
 
-user_bot.loop.run_until_complete(BotzHub())
+user_bot.loop.run_until_complete(PredatorZNEX())
