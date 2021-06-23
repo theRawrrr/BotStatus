@@ -63,8 +63,7 @@ async def BotzHub():
             day = dt.now(k).strftime("%d")
             year =  dt.now(k).strftime("%Y")
             t = dt.now(k).strftime("%H:%M:%S")
-            edit_text +=f"@Compressor_livlogs (+) in this list,To escape from this [400 PEER_ID_INVALID] Error:
- \n\n╾──────────────────────╼ \n**Last Autodited:** \n`{t} - {day} {month} {year} [IST]`"
+            edit_text +=f"@Compressor_livlogs (+) in this list,To escape from this '400 PEER_ID_INVALID' Error \n\n╾──────────────────────╼ \n**Last Autodited:** \n`{t} - {day} {month} {year} [IST]`"
             await user_bot.edit_message(int(chnl_id), int(msg_id), edit_text)
             print(f"Checks since last restart - {c}")
             print("Sleeping for 2 hours.")
